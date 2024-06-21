@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animales para Niños</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image:#FCA10A;
+        }
+        h1 {
+            color: #
+FCA10A
+;
+        }
+        .animal-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .animal {
+            cursor: pointer;
+        }
+        .animal img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .animal img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body  background="saban.jpg">
+    <h1>Aplicación de Animales para Niños</h1>
+    <div class="animal-container">
+        <div class="animal" onclick="playSound('dog')">
+            <img src="1.png">
+            <p>Perro</p>
+        </div>
+        <div class="animal" onclick="playSound('cat')">
+            <img src="2.jpg" alt="Gato">
+            <p>Gato</p>
+        </div>
+        <div class="animal" onclick="playSound('cow')">
+            <img src="4.jpg">
+            <p>Vaca</p>
+        </div>
+        <div class="animal" onclick="playSound('lion')">
+            <img src="3.jpg">
+            <p>León</p>
+        </div>
+        <div class="animal" onclick="playSound('bird')">
+            <img src="5.jpg">
+            <p>pajaro</p>
+        </div>
+        <div class="animal" onclick="playSound('chiken')">
+            <img src="6.jpg">
+            <p>gallina</p>
+        </div>
+        <div class="animal" onclick="playSound('bee')">
+            <img src="7.jpg">
+            <p>abeja</p>
+        </div>
+        <div class="animal" onclick="playSound('snake')">
+            <img src="8.png">
+            <p>serpiente</p>
+        </div>
+        <div class="animal" onclick="playSound('fante')">
+            <img src="9.jpg">
+            <p>elefante</p>
+        </div>
+    </div>
+
+    <audio id="dog" src="dog.mp3"></audio>
+    <audio id="cat" src="cat.mp3"></audio>
+    <audio id="cow" src="cow.mp3"></audio>
+    <audio id="lion" src="lion.mp3"></audio>
+    <audio id="bird" src="bird.mp3"></audio>
+    <audio id="chiken" src="chiken.mp3"></audio>
+    <audio id="bee" src="bee.mp3"></audio>
+    <audio id="snake" src="snake.mp3"></audio>
+    <audio id="fante" src="fante.mp3"></audio>
+
+    <script>
+        function playSound(animal) {
+            document.getElementById(animal).play();
+        }
+    </script>
+</body>
+</html>
